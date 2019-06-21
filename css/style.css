@@ -2,15 +2,15 @@
 
     font-family: 'Red October-Fat';
 
-    src: url('/fonts/Red\ October-Fat.ttf');
+    src: url('../fonts/Red\ October-Fat.ttf');
 
-    src: url('/fonts/Red\ October-Fat.ttf') format('eot'),
+    src: url('../fonts/Red\ October-Fat.ttf') format('eot'),
 
-        url('/fonts/Red\ October-Fat.ttf') format(''),
+        url('../fonts/Red\ October-Fat.ttf') format(''),
 
-        url('/fonts/Red\ October-Fat.ttf') format('truetype'),
+        url('../fonts/Red\ October-Fat.ttf') format('truetype'),
 
-        url('/fonts/Red\ October-Fat.ttf') format('svg');
+        url('../fonts/Red\ October-Fat.ttf') format('svg');
 
     font-weight: normal;
 
@@ -21,11 +21,11 @@
 
     font-family: 'a_OldTyperNr';
 
-    src: url('/fonts/a_OldTyperNr.ttf');
-    src: url('/fonts/a_OldTyperNr.ttf') format('eot'),
-        url('/fonts/a_OldTyperNr.ttf') format('woff'),
-        url('/fonts/a_OldTyperNr.ttf') format('truetype'),
-        url('/fonts/a_OldTyperNr.ttf') format('svg');
+    src: url('../fonts/a_OldTyperNr.ttf');
+    src: url('../fonts/a_OldTyperNr.ttf') format('eot'),
+        url('../fonts/a_OldTyperNr.ttf') format('woff'),
+        url('../fonts/a_OldTyperNr.ttf') format('truetype'),
+        url('../fonts/a_OldTyperNr.ttf') format('svg');
 }
 
 
