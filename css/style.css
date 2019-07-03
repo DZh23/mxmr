@@ -2,15 +2,15 @@
 
     font-family: 'Red-October-Regular';
 
-    src: url('../fonts/Red-October-Regular.ttf');
+    src: url('/fonts/Red-October-Regular.ttf');
 
-    src: url('../fonts/Red-October-Regular.ttf') format('eot'),
+    src: url('/fonts/Red-October-Regular.ttf') format('eot'),
 
-        url('../fonts/Red-October-Regular.ttf') format('woff'),
+        url('/fonts/Red-October-Regular.ttf') format('woff'),
 
-        url('../fonts/Red-October-Regular.ttf') format('truetype'),
+        url('/fonts/Red-October-Regular.ttf') format('truetype'),
 
-        url('../fonts/Red-October-Regular.ttf') format('svg');
+        url('/fonts/Red-October-Regular.ttf') format('svg');
 
 
 }
@@ -19,13 +19,12 @@
 
     font-family: 'a_OldTyperNr';
 
-    src: url('../fonts/a_OldTyperNr.ttf');
-    src: url('../fonts/a_OldTyperNr.ttf') format('eot'),
-        url('../fonts/a_OldTyperNr.ttf') format('woff'),
-        url('../fonts/a_OldTyperNr.ttf') format('truetype'),
-        url('../fonts/a_OldTyperNr.ttf') format('svg');
+    src: url('/fonts/a_OldTyperNr.ttf');
+    src: url('/fonts/a_OldTyperNr.ttf') format('eot'),
+        url('/fonts/a_OldTyperNr.ttf') format('woff'),
+        url('/fonts/a_OldTyperNr.ttf') format('truetype'),
+        url('/fonts/a_OldTyperNr.ttf') format('svg');
 }
-
 
 
 * {
@@ -117,7 +116,7 @@ html {
     animation: neon 1.5s ease-in-out infinite alternate;
     animation: flicker 1s linear infinite;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px red, 0 0 70px red, 0 0 80px red, 0 0 100px red, 0 0 150px red;
-    
+
 }
 
 
@@ -156,6 +155,7 @@ html {
     padding-top: 2rem;
     left: 50%;
     transform: translate(-50%);
+    
 }
 
 
@@ -184,7 +184,6 @@ html {
 .text-reveal:hover {
     background-color: transparent;
     color: black;
-    transform: translateY(-5px);
 }
 
 .main-footer {
@@ -438,7 +437,7 @@ html {
     }
 
     .btn-about-us {
-        top: 10rem;
+        top: 35rem;
     }
 
     .description-article {
