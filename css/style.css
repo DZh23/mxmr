@@ -2,15 +2,15 @@
 
     font-family: 'Red-October-Regular';
 
-    src: url('../fonts/Red-October-Regular.ttf');
+    src: url('/fonts/Red-October-Regular.ttf');
 
-    src: url('../fonts/Red-October-Regular.ttf') format('eot'),
+    src: url('/fonts/Red-October-Regular.ttf') format('eot'),
 
-        url('../fonts/Red-October-Regular.ttf') format('woff'),
+        url('/fonts/Red-October-Regular.ttf') format('woff'),
 
-        url('../fonts/Red-October-Regular.ttf') format('truetype'),
+        url('/fonts/Red-October-Regular.ttf') format('truetype'),
 
-        url('../fonts/Red-October-Regular.ttf') format('svg');
+        url('/fonts/Red-October-Regular.ttf') format('svg');
 
 
 }
@@ -19,11 +19,11 @@
 
     font-family: 'a_OldTyperNr';
 
-    src: url('../fonts/a_OldTyperNr.ttf');
-    src: url('../fonts/a_OldTyperNr.ttf') format('eot'),
-        url('../fonts/a_OldTyperNr.ttf') format('woff'),
-        url('../fonts/a_OldTyperNr.ttf') format('truetype'),
-        url('../fonts/a_OldTyperNr.ttf') format('svg');
+    src: url('/fonts/a_OldTyperNr.ttf');
+    src: url('/fonts/a_OldTyperNr.ttf') format('eot'),
+        url('/fonts/a_OldTyperNr.ttf') format('woff'),
+        url('/fonts/a_OldTyperNr.ttf') format('truetype'),
+        url('/fonts/a_OldTyperNr.ttf') format('svg');
 }
 
 
@@ -68,10 +68,6 @@ html {
     align-content: space-around;
     filter: brightness(100%);
 
-
-
-
-
     /*animation: flicker 1s linear infinite;*/
 }
 
@@ -86,7 +82,8 @@ html {
 
     padding-top: 30px;
     padding-bottom: 30px;
-    width: 90%;
+    width: 70%;
+
 
     /*-webkit-animation: neon1 1.5s ease-in-out infinite alternate;
     -moz-animation: neon1 1.5s ease-in-out infinite alternate;
@@ -155,7 +152,7 @@ html {
     padding-top: 2rem;
     left: 50%;
     transform: translate(-50%);
-    
+
 }
 
 
@@ -170,6 +167,8 @@ html {
     text-align: center;
     width: 70%;
     margin: auto;
+
+
 }
 
 .text-reveal {
@@ -309,6 +308,7 @@ html {
     .logo {
         font-size: 10rem;
         text-align: center;
+        width: 80%;
     }
 
     .btn-about-us {
@@ -330,10 +330,25 @@ html {
         margin: 0 auto;
 
     }
+}
 
+@media (max-width: 1024px) {
+    .header {
+        width: 100%;
+    }
 
+    .logo {
+        font-size: 10rem;
+        text-align: center;
+        width: 90%;
+    }
+
+   .container {
+       height: 100%;
+   }
 
 }
+
 
 @media (max-width: 990px) {
     .header {
@@ -434,6 +449,7 @@ html {
     .logo {
         font-size: 4rem;
         text-align: center;
+        width: 90%;
     }
 
     .btn-about-us {
@@ -465,6 +481,8 @@ html {
     .logo {
         font-size: 3.5rem;
         margin: 0 auto;
+        width: 90%;
+
     }
 
     .btn-about-us {
@@ -482,7 +500,36 @@ html {
         margin: 0 auto;
 
     }
+}
+
+@media (max-width: 320px) {
+    .header {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .logo {
+        font-size: 3rem;
+        margin: 0 auto;
+        width: 90%;
+
+    }
+
+    .btn-about-us {
+        top: 15rem;
+    }
+
+    .description-article {
+        margin: 0 auto;
+        padding: 0 5%;
+        width: 90%;
+    }
 
 
+    .description-text {
+        margin: 0 auto;
 
+    }
 }
