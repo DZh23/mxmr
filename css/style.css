@@ -2,15 +2,15 @@
 
     font-family: 'Red-October-Regular';
 
-    src: url('../fonts/Red-October-Regular.ttf');
+    src: url('/fonts/Red-October-Regular.ttf');
 
-    src: url('../fonts/Red-October-Regular.ttf') format('eot'),
+    src: url('/fonts/Red-October-Regular.ttf') format('eot'),
 
-        url('../fonts/Red-October-Regular.ttf') format('woff'),
+        url('/fonts/Red-October-Regular.ttf') format('woff'),
 
-        url('../fonts/Red-October-Regular.ttf') format('truetype'),
+        url('/fonts/Red-October-Regular.ttf') format('truetype'),
 
-        url('../fonts/Red-October-Regular.ttf') format('svg');
+        url('/fonts/Red-October-Regular.ttf') format('svg');
 
 
 }
@@ -19,16 +19,18 @@
 
     font-family: 'a_OldTyperNr';
 
-    src: url('../fonts/a_OldTyperNr.ttf');
-    src: url('../fonts/a_OldTyperNr.ttf') format('eot'),
-        url('../fonts/a_OldTyperNr.ttf') format('woff'),
-        url('../fonts/a_OldTyperNr.ttf') format('truetype'),
-        url('../fonts/a_OldTyperNr.ttf') format('svg');
+    src: url('/fonts/a_OldTyperNr.ttf');
+    src: url('/fonts/a_OldTyperNr.ttf') format('eot'),
+        url('/fonts/a_OldTyperNr.ttf') format('woff'),
+        url('/fonts/a_OldTyperNr.ttf') format('truetype'),
+        url('/fonts/a_OldTyperNr.ttf') format('svg');
 }
 
 
 * {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -39,11 +41,9 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: url('https://images.unsplash.com/photo-1521261965468-af92769fabd4?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ') center center fixed;
-    background-size: cover;
+    
     width: 100%;
     height: 100%;
-
 }
 
 
@@ -56,7 +56,6 @@ html {
 
 
 .header {
-
     padding: 0;
     margin-right: 0;
     margin-top: 5rem;
@@ -67,29 +66,33 @@ html {
     align-items: center;
     align-content: space-around;
     filter: brightness(100%);
+    margin: 0;
 
     /*animation: flicker 1s linear infinite;*/
 }
 
 
-.logo {
+.video-block {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    
+}
+
+.logo-video {
+    max-width: 100%;
+}
+
+/*.logo {
     font-family: 'Red-October-Regular';
     text-align: center;
     font-size: 12rem;
     align-self: flex-start;
-
     margin: 0;
-
     padding-top: 30px;
     padding-bottom: 30px;
     width: 70%;
-
-
-    /*-webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-    animation: neon1 1.5s ease-in-out infinite alternate;*/
-
-
     -webkit-text-stroke: 1px #ffffff;
     color: #ffffff;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff;
@@ -99,11 +102,15 @@ html {
 
     box-shadow: 0 0 30px red, 0 0 30px red, inset 0 0 30px red, inset 0 0 30px red;
     animation: flicker 1s linear infinite;
-    mix-blend-mode: screen;
-
+    /*-webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;*/ /*
 }
 
-/*/*/
+
+
+
+/*/
 /*  "R" Symbol   */
 /*/*/
 
@@ -113,7 +120,6 @@ html {
     animation: neon 1.5s ease-in-out infinite alternate;
     animation: flicker 1s linear infinite;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px red, 0 0 70px red, 0 0 80px red, 0 0 100px red, 0 0 150px red;
-
 }
 
 
@@ -126,12 +132,13 @@ html {
     position: absolute;
     top: 45rem;
     color: #222;
+    transition: .7s ease-in-out;
 }
 
 .btn-about-us:hover {
     color: #ffffff;
-    transition: .7s;
-    transform: translateY(-5px);
+    transition: .7s ease-in-out;
+    transform: translateY(-7px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
     border-bottom: 2px solid #ffffff;
 }
@@ -148,11 +155,10 @@ html {
     display: block;
     position: absolute;
     width: 20%;
-    border-bottom: 1.5px solid black;
+    border-bottom: 1.5px solid #222;
     padding-top: 2rem;
     left: 50%;
     transform: translate(-50%);
-
 }
 
 
@@ -167,8 +173,6 @@ html {
     text-align: center;
     width: 70%;
     margin: auto;
-
-
 }
 
 .text-reveal {
@@ -204,6 +208,7 @@ html {
     align-self: center;
     color: transparent;
     font-size: 1.5rem;
+    font-weight: 200;
     letter-spacing: .20rem;
     padding-bottom: 25px;
     color: black;
@@ -230,9 +235,6 @@ html {
     margin: 15px;
     border-radius: 50%;
 }
-
-
-
 
 
 /*
@@ -292,12 +294,36 @@ html {
       text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
     }
   } */
-
-
-
-
-
 /*RESPONSIVE*/
+
+@media (max-width: 1440px) {
+    .header {
+        width: 100%;
+
+    }
+
+    .logo {
+        font-size: 10rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .btn-about-us {
+        top: 35rem;
+    }
+
+    .description-article {
+        margin: 0 auto;
+        padding: 0 5%;
+        width: 90%;
+
+    }
+
+    .description-text {
+        margin: 0 auto;
+
+    }
+}
 
 @media (max-width: 1230px) {
     .header {
@@ -343,10 +369,9 @@ html {
         width: 90%;
     }
 
-   .container {
-       height: 100%;
-   }
-
+    .container {
+        height: auto;
+    }
 }
 
 
@@ -375,9 +400,6 @@ html {
 
     }
 
-
-
-
 }
 
 
@@ -401,8 +423,6 @@ html {
         margin: 0 auto;
 
     }
-
-
 }
 
 
@@ -430,11 +450,7 @@ html {
 
     .description-text {
         margin: 0 auto;
-
     }
-
-
-
 }
 
 @media (max-width: 414px) {
@@ -443,7 +459,6 @@ html {
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
 
     .logo {
@@ -464,10 +479,7 @@ html {
 
     .description-text {
         margin: 0 auto;
-
     }
-
-
 }
 
 @media (max-width: 375px) {
@@ -475,14 +487,12 @@ html {
         width: 100%;
         justify-content: center;
         text-align: center;
-
     }
 
     .logo {
         font-size: 3.5rem;
         margin: 0 auto;
         width: 90%;
-
     }
 
     .btn-about-us {
@@ -498,7 +508,6 @@ html {
 
     .description-text {
         margin: 0 auto;
-
     }
 }
 
@@ -507,14 +516,12 @@ html {
         width: 100%;
         justify-content: center;
         text-align: center;
-
     }
 
     .logo {
         font-size: 3rem;
         margin: 0 auto;
         width: 90%;
-
     }
 
     .btn-about-us {
@@ -530,6 +537,5 @@ html {
 
     .description-text {
         margin: 0 auto;
-
     }
 }
