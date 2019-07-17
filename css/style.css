@@ -53,6 +53,7 @@ html {
 }
 
 
+
 /* LOGO + BUTTON BLOCK */
 
 .header {
@@ -81,8 +82,8 @@ html {
 
 .logo-video {
     position: absolute;
-    transform: scale(.7);
-    top: -10rem;
+    top: 50%;
+    transform: translateY(-50%);
     max-width: 100%;
     margin: 0 auto;
 }
@@ -91,11 +92,14 @@ html {
 .btn-about-us {
     font-family: 'Red-October-Regular', sans-serif;
     outline: none;
+    margin: 0;
     padding: 20px;
     text-decoration: none;
     position: absolute;
-    top: 50rem;
-    font-size: 15px;
+    width: auto;
+    top: 50%;
+
+
     color: grey;
     transition: .7s ease-in-out;
 }
@@ -103,7 +107,7 @@ html {
 .btn-about-us:hover {
     color: tomato;
     transition: .7s ease-in-out;
-    transform: translateY(-7px);
+    
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
     border-bottom: 2px solid tomato;
 
@@ -307,11 +311,14 @@ a {
     .logo-video {
         max-width: 100%;
         transform: scale(1);
+        top: 50%;
+        transform: translateY(-50%)
 
     }
 
     .btn-about-us {
-        top: 45rem;
+        top: 60rem;
+        font-size: large;
     }
 
 
@@ -324,14 +331,14 @@ a {
     .description-text {
         margin: 0 auto;
         padding: 2rem 0;
-        font-size: 1rem;
+        font-size: 1.5rem;
         letter-spacing: 0.2rem;
     }
 
     .footer-social-contact {
         margin: 0;
         padding: 0;
-        font-size: 1rem;
+        font-size: 1.5rem;
         letter-spacing: 0.2rem;
 
 
@@ -404,13 +411,12 @@ a {
 
     .logo-video {
         max-width: 100%;
-        transform: scale(1);
-
-
+        transform: translateY(-50%);
     }
 
     .btn-about-us {
         top: 45rem;
+        font-size: small;
     }
 
 
@@ -552,7 +558,7 @@ a {
 
     .logo-video {
         max-width: 100%;
-        transform: scale(1);
+        transform: translateY(-50%);
     }
 
 
@@ -634,3 +640,4 @@ a {
 
     }
 }
+
