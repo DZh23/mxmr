@@ -57,8 +57,8 @@ html {
 
 .header {
     padding: 0;
-    margin-right: 0;
-    margin-top: 5rem;
+
+    margin: 0;
     width: 100%;
     height: 100%;
     display: flex;
@@ -114,7 +114,7 @@ html {
 
 .container {
     width: 100%;
-    height: 100%;
+    height: auto;
     background: linear-gradient(to right, #000000, #434343);
 }
 
@@ -294,21 +294,47 @@ a {
 @media (max-width: 1024px) {
     .header {
         width: 100%;
+        height: 100%;
+        justify-content: center;
+        text-align: center;
     }
 
     .video-block {
         width: 100%;
+        height: auto;
     }
 
     .logo-video {
         max-width: 100%;
+        transform: scale(1);
 
     }
 
+    .btn-about-us {
+        top: 45rem;
+    }
 
-    .container {
-        width: 100%;
-        height: auto;
+
+    .description-article {
+        margin: 0 auto;
+        padding: 0 5%;
+        width: 90%;
+    }
+
+    .description-text {
+        margin: 0 auto;
+        padding: 2rem 0;
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .footer-social-contact {
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+
+
     }
 }
 
@@ -316,21 +342,27 @@ a {
 @media (max-width: 990px) {
     .header {
         width: 100%;
+        height: 100%;
+        justify-content: center;
+        text-align: center;
     }
 
     .video-block {
         width: 100%;
+        height: auto;
     }
 
     .logo-video {
         max-width: 100%;
+        transform: scale(1);
+
 
     }
-
 
     .btn-about-us {
-        top: 35rem;
+        top: 45rem;
     }
+
 
     .description-article {
         margin: 0 auto;
@@ -340,24 +372,45 @@ a {
 
     .description-text {
         margin: 0 auto;
+        padding: 2rem 0;
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .footer-social-contact {
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+
 
     }
 
 }
 
 
-@media (max-width: 770px) {
+@media (max-width: 768px) {
     .header {
         width: 100%;
+        height: 100%;
+        justify-content: center;
+        text-align: center;
     }
 
     .video-block {
         width: 100%;
+        height: auto;
     }
 
     .logo-video {
         max-width: 100%;
+        transform: scale(1);
 
+
+    }
+
+    .btn-about-us {
+        top: 45rem;
     }
 
 
@@ -369,6 +422,17 @@ a {
 
     .description-text {
         margin: 0 auto;
+        padding: 2rem 0;
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .footer-social-contact {
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+
 
     }
 }
@@ -378,20 +442,26 @@ a {
 @media (max-width: 575px) {
     .header {
         width: 100%;
+        height: 100%;
+        justify-content: center;
+        text-align: center;
     }
 
     .video-block {
         width: 100%;
+        height: auto;
+
     }
 
     .logo-video {
         max-width: 100%;
-
+        transform: scale(1.5);
     }
 
 
     .btn-about-us {
-        top: 35rem;
+        top: 45rem;
+        font-size: small;
     }
 
     .description-article {
@@ -402,6 +472,18 @@ a {
 
     .description-text {
         margin: 0 auto;
+        padding: 2rem 0;
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .footer-social-contact {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+
     }
 }
 
@@ -413,85 +495,19 @@ a {
 
     .video-block {
         width: 100%;
-    }
-
-    .logo-video {
-        max-width: 100%;
-
-
-    }
-
-    .btn-about-us {
-        top: 35rem;
-    }
-
-    .description-article {
-        margin: 0 auto;
-        padding: 0 5%;
-        width: 90%;
-    }
-
-    .description-text {
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 375px) {
-    .header {
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .video-block {
-        width: 100%;
-    }
-
-    .logo-video {
-        max-width: 100%;
-
-    }
-
-    .btn-about-us {
-        top: 25rem;
-    }
-
-    .description-article {
-        margin: 0 auto;
-        padding: 0 5%;
-        width: 90%;
-    }
-
-
-    .description-text {
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 320px) {
-    .header {
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .video-block {
-        position: absolute;
-        width: 100%;
         height: auto;
-        z-index: -1000;
-        overflow: hidden;
+
     }
 
     .logo-video {
         max-width: 100%;
-        
+        transform: scale(1);
+
     }
 
 
     .btn-about-us {
-        top: 28rem;
+        top: 30rem;
         font-size: small;
     }
 
@@ -504,11 +520,117 @@ a {
 
     .description-text {
         margin: 0 auto;
+        padding: 2rem 0;
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
     }
 
 
     .footer-social-contact {
         flex-direction: column;
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+
+    }
+}
+
+@media (max-width: 375px) {
+    .header {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .video-block {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .logo-video {
+        max-width: 100%;
+        transform: scale(1);
+    }
+
+
+    .btn-about-us {
+        top: 30rem;
+        font-size: small;
+    }
+
+    .description-article {
+        margin: 0 auto;
+        padding: 0 5%;
+        width: 90%;
+    }
+
+    .description-text {
+        margin: 0 auto;
+        padding: 2rem 0;
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .footer-social-contact {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+
+    }
+}
+
+@media (max-width: 320px) {
+    .header {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .video-block {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .logo-video {
+        max-width: 100%;
+        transform: scale(1);
+
+    }
+
+
+    .btn-about-us {
+        top: 25rem;
+        font-size: small;
+    }
+
+    .description-article {
+        margin: 0 auto;
+        padding: 0 5%;
+        width: 90%;
+    }
+
+
+    .description-text {
+        margin: 0 auto;
+        padding: 2rem 0;
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+    }
+
+
+    .footer-social-contact {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
 
     }
 }
