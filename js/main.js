@@ -10,3 +10,14 @@ $('#view-work[href^="#"]').on('click', function(event) {
     }
 
 })
+
+
+const text = baffle(".description-text");
+text.set({
+    characters : '▓█▓ ▓▒/░█ /></█ ▓>█ ▓▒▓▓█ /░░▓ ▒██ >▒█░ ▒█▒█',
+    speed: 120
+});
+text.start();
+text.reveal(4000);
+
+

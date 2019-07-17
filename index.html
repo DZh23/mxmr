@@ -6,30 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
-    
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
-    <script src="t.min/t.min.js"></script>
 
+    <!-- <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/t.min/t.min.js"></script>
+    <script src="https://kit.fontawesome.com/602323c6fc.js"></script>
 </head>
 
+
 <body>
+
     <header class="header">
 
         <div class="video-block">
             <video class="logo-video" autoplay loop muted>
-                <source src="video/logo_blur.mp4" type="video/mp4">
+                <source src="/video/mxmr_heads_1.mp4" type="video/mp4">
             </video>
         </div>
-
-
         <a href="#description" class="btn-about-us" id="view-work">
             Жми сюда
         </a>
+
 
         <!--
         <p class="logo" data-text="Проект Мухомор">
@@ -40,9 +40,46 @@
     </header>
 
 
+
+
     <main class="container" id="description">
+
         <article class="description-article">
-            <p class="description-text">Artist <span class="text-reveal">не должен быть</span> голодным. Никто <span
+            <p class="description-text" id="main">
+                Artist не должен быть голодным. Никто не
+                должен быть
+                голодным.
+                Никто никому вообще ничего не должен.
+                Проект МУХОМОР - очень
+                коммерческие.
+                Мы, мать его, очень коммерческие,
+                но. Без но.
+                У проекта две составляющих : социальная и
+                коммерческая. Одно без другого не существует в
+                контексте идеи и современных реалий. Проект МУХОМОР -
+                о качественной продукции, как топливе для
+                развития современного искусства, закопанного
+                реалиями во многих среди нас.
+            </p>
+        </article>
+
+        <script>
+            //Pow!
+
+            $('#main').t({
+                beep: false,
+                caret: false,
+                repeat: 0,
+                typing: function (elm, chr) {
+
+                    if (chr.match(/\-trigger/))
+                        $('#pow-txt').show().delay(500).fadeOut(0);
+
+                }
+            });
+        </script>
+
+        <!--<p class="description-text">Artist <span class="text-reveal">не должен быть</span> голодным. Никто <span
                     class="text-reveal">не должен</span> быть
                 голодным.
                 Никто никому вообще ничего не должен.
@@ -57,28 +94,50 @@
                 развития современного искусства, закопанного
                 реалиями во
                 многих среди нас.</b>
+            </p> -->
 
-            </p>
-        </article>
+
+
 
     </main>
 
 
     <footer class="main-footer">
         <div class="footer-social">
-            <b class="footer-social-title">ЭЙ!</b>
             <ul class="footer-social-contact">
-                <li class="social-button"><a href="#"><img
-                            src="https://img.icons8.com/ios/50/000000/instagram-new.png"></a></li>
-                <li class="social-button"><a href="https://www.facebook.com/projectmxmp/"><img
-                            src="https://img.icons8.com/ios/50/000000/facebook-circled.png"></a></li>
+                <li class="social-button"><b>Местонахождение</b>
+                    <br>
+                    <br>Украина, Киев
+                </li>
+                <li class="social-button"><b>Связь</b>
+                    <br>
+                    <br><a href="#">Instagram</a>
+                    <br><a href="#">Facebook</a>
+                </li>
+                <li class="social-button"><b>Контакты</b>
+                    <br>
+                    <br>063-14-88-666 <i class="fas fa-phone"></i>
+                    <br>muhomor@gmail.com <i class="far fa-envelope"></i>
+                </li>
             </ul>
         </div>
     </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
+
+
+<!-- 
+    <div class="footer-social">
+            
+            <ul class="footer-social-contact">
+                <li class="social-button"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li class="social-button"><a href="https://www.facebook.com/projectmxmp/"><i
+                            class="fab fa-facebook-square"></i></a></li>
+            </ul>
+        </div>
+-->
