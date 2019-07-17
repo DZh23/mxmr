@@ -53,7 +53,6 @@ html {
 }
 
 
-
 /* LOGO + BUTTON BLOCK */
 
 .header {
@@ -82,8 +81,7 @@ html {
 
 .logo-video {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    
     max-width: 100%;
     margin: 0 auto;
 }
@@ -97,8 +95,8 @@ html {
     text-decoration: none;
     position: absolute;
     width: auto;
-    top: 50%;
-
+    top: 90%;
+ 
 
     color: grey;
     transition: .7s ease-in-out;
@@ -231,6 +229,7 @@ a {
 @media (max-width: 1440px) {
     .header {
         width: 100%;
+        height: 100%;
 
     }
 
@@ -245,7 +244,7 @@ a {
 
 
     .btn-about-us {
-        top: 35rem;
+        top: 80%;
     }
 
     .description-article {
@@ -449,8 +448,7 @@ a {
     .header {
         width: 100%;
         height: 100%;
-        justify-content: center;
-        text-align: center;
+        
     }
 
     .video-block {
@@ -461,12 +459,14 @@ a {
 
     .logo-video {
         max-width: 100%;
-        transform: scale(1.5);
+        
+        
+        
     }
 
 
     .btn-about-us {
-        top: 45rem;
+        top: 70%;
         font-size: small;
     }
 
@@ -496,6 +496,7 @@ a {
 @media (max-width: 414px) {
     .header {
         width: 100%;
+        height: 100%;
 
     }
 
@@ -503,11 +504,12 @@ a {
         width: 100%;
         height: auto;
 
+
     }
 
     .logo-video {
         max-width: 100%;
-        transform: scale(1);
+        transform: translateY(-70%);
 
     }
 
@@ -546,8 +548,6 @@ a {
     .header {
         width: 100%;
         height: 100%;
-        justify-content: center;
-        text-align: center;
     }
 
     .video-block {
@@ -558,7 +558,7 @@ a {
 
     .logo-video {
         max-width: 100%;
-        transform: translateY(-50%);
+        
     }
 
 
@@ -594,8 +594,6 @@ a {
     .header {
         width: 100%;
         height: 100%;
-        justify-content: center;
-        text-align: center;
     }
 
     .video-block {
@@ -606,8 +604,6 @@ a {
 
     .logo-video {
         max-width: 100%;
-        transform: scale(1);
-
     }
 
 
