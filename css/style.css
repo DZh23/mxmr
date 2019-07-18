@@ -117,7 +117,6 @@ html {
 .container {
     width: 100%;
     height: auto;
-    background: linear-gradient(to right, #000000, #434343);
 }
 
 .description-article {
@@ -138,6 +137,8 @@ html {
     font-size: 1.3rem;
     color: #555;
     text-align: center;
+    font-size: 1.5rem;
+        
 }
 
 /*
@@ -164,7 +165,7 @@ html {
     font-family: 'a_OldTyperNr';
     height: 40%;
     width: 100%;
-    background: #555;
+    color: #fff;
 }
 
 .footer-social {
@@ -203,6 +204,7 @@ html {
     display: inherit;
     list-style: none;
     align-self: center;
+    font-size: 1.5rem;
     letter-spacing: 0.5rem;
 
 }
@@ -218,7 +220,8 @@ html {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #fff;
+    
 }
 
 
@@ -257,12 +260,16 @@ a {
     .description-text {
         margin: 0 auto;
         padding: 2rem 0;
+        font-size: 1.5rem;
+        letter-spacing: 0.3rem;
         
     }
 
     .footer-social-contact {
         margin: 0;
         padding: 0;
+        font-size: 1.5rem;
+        letter-spacing: 0.3rem;
 
 
     }
@@ -337,7 +344,7 @@ a {
 
     .btn-about-us {
         top: 75%;
-        font-size: medium;
+        font-size: large;
     }
 
 
@@ -431,7 +438,7 @@ a {
 
     .btn-about-us {
         top: 45rem;
-        font-size: small;
+        font-size: medium;
     }
 
 
@@ -444,14 +451,14 @@ a {
     .description-text {
         margin: 0 auto;
         padding: 2rem 0;
-        font-size: 1rem;
+        font-size: 1.3rem;
         letter-spacing: 0.2rem;
     }
 
     .footer-social-contact {
         margin: 0;
         padding: 0;
-        font-size: 1rem;
+        font-size: 1.3rem;
         letter-spacing: 0.2rem;
 
 
@@ -654,6 +661,8 @@ a {
 
     }
 }
+
+
 
 
 
