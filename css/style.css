@@ -309,14 +309,12 @@ a {
 
     .logo-video {
         max-width: 100%;
-        transform: scale(1);
-        top: 50%;
         transform: translateY(-50%)
 
     }
 
     .btn-about-us {
-        top: 60rem;
+        top: 60%;
         font-size: large;
     }
 
@@ -360,13 +358,14 @@ a {
 
     .logo-video {
         max-width: 100%;
-        transform: scale(1);
+        
 
 
     }
 
     .btn-about-us {
-        top: 45rem;
+        top: 75%;
+        font-size: medium;
     }
 
 
@@ -414,8 +413,8 @@ a {
     }
 
     .btn-about-us {
-        top: 45rem;
-        font-size: small;
+        top: 70%;
+        font-size: medium;
     }
 
 
@@ -428,14 +427,14 @@ a {
     .description-text {
         margin: 0 auto;
         padding: 2rem 0;
-        font-size: 1rem;
+        font-size: 1.3rem;
         letter-spacing: 0.2rem;
     }
 
     .footer-social-contact {
         margin: 0;
         padding: 0;
-        font-size: 1rem;
+        font-size: 1.3rem;
         letter-spacing: 0.2rem;
 
 
@@ -458,16 +457,13 @@ a {
     }
 
     .logo-video {
-        max-width: 100%;
-        
-        
-        
+        max-width: 100%;     
     }
 
 
     .btn-about-us {
         top: 70%;
-        font-size: small;
+        font-size: medium;
     }
 
     .description-article {
@@ -479,7 +475,7 @@ a {
     .description-text {
         margin: 0 auto;
         padding: 2rem 0;
-        font-size: 1rem;
+        font-size: 1.3rem;
         letter-spacing: 0.2rem;
     }
 
@@ -487,7 +483,7 @@ a {
         flex-direction: column;
         margin: 0;
         padding: 0;
-        font-size: 1rem;
+        font-size: 1.3rem;
         letter-spacing: 0.2rem;
 
     }
@@ -563,7 +559,7 @@ a {
 
 
     .btn-about-us {
-        top: 30rem;
+        top: 40rem;
         font-size: small;
     }
 
@@ -636,4 +632,6 @@ a {
 
     }
 }
+
+
 
