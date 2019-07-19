@@ -64,7 +64,6 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: space-around;
 
 
 
@@ -74,15 +73,12 @@ html {
 
 .video-block {
     display: flex;
-    justify-content: center;
     position: relative;
     width: 100%;
     height: 100%;
 }
 
 .logo-video {
-    position: absolute;
-    
     max-width: 100%;
     margin: 0 auto;
 }
@@ -97,7 +93,7 @@ html {
     position: absolute;
     width: auto;
     top: 90%;
- 
+
 
     color: lightgray;
     transition: .7s ease-in-out;
@@ -106,7 +102,7 @@ html {
 .btn-about-us:hover {
     color: #555;
     transition: .7s ease-in-out;
-    
+
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
     border-bottom: 2px solid #555;
 
@@ -129,17 +125,17 @@ html {
 
 .description-text {
     width: 70%;
-    padding: 20rem 0;
+    padding: 20% 0;
     margin: auto;
     font-family: 'a_OldTyperNr';
-    font-weight: 900;
+    font-weight: 200;
     letter-spacing: 0.4rem;
     line-height: 2rem;
     font-size: 1.3rem;
     color: lightgray;
     text-align: center;
     font-size: 1.5rem;
-        
+
 }
 
 /*
@@ -176,29 +172,6 @@ html {
     height: 100%;
 }
 
-/*
-.footer-social-title {
-    position: absolute;
-    align-self: center;
-    color: transparent;
-    font-size: 1.5rem;
-    font-weight: 200;
-    letter-spacing: .20rem;
-    padding-bottom: 25px;
-    color: grey;
-    transition: .5s;
-}
-
-
-.footer-social-title:hover {
-    transition: .5s;
-    transform: translateY(-5px);
-    color: tomato;
-    cursor: pointer;
-}
-
-*/
-
 
 .footer-social-contact {
     margin-top: 2.5rem;
@@ -207,6 +180,7 @@ html {
     align-self: center;
     font-size: 1.5rem;
     letter-spacing: 0.5rem;
+    font-weight: 200;
 
 }
 
@@ -222,7 +196,7 @@ html {
 a {
     text-decoration: none;
     color: lightgray;
-    
+
 }
 
 
@@ -263,7 +237,7 @@ a {
         padding: 2rem 0;
         font-size: 1.5rem;
         letter-spacing: 0.3rem;
-        
+
     }
 
     .footer-social-contact {
@@ -290,14 +264,13 @@ a {
 
     .logo-video {
         max-width: 100%;
-        transform: translateY(-50%);
 
     }
 
 
     .btn-about-us {
-        top: 75%;
-        font-size: large;
+        top: 85%;
+        font-size: medium;
     }
 
 
@@ -326,11 +299,13 @@ a {
 }
 
 @media (max-width: 1024px) {
+
     .header {
         width: 100%;
-        height: 100%;
-        
+        height: auto;
+
     }
+
 
     .video-block {
         width: 100%;
@@ -338,14 +313,13 @@ a {
     }
 
     .logo-video {
-        max-width: 100%;        
-        transform: translateY(-50%)
-
+        max-width: 100%;
+        
     }
 
     .btn-about-us {
-        top: 75%;
-        font-size: large;
+        top: 50%;
+        font-size: medium;
     }
 
 
@@ -367,8 +341,6 @@ a {
         padding: 0;
         font-size: 1.5rem;
         letter-spacing: 0.3rem;
-
-
     }
 }
 
@@ -377,7 +349,7 @@ a {
     .header {
         width: 100%;
         height: 100%;
-        
+
     }
 
     .video-block {
@@ -387,7 +359,7 @@ a {
 
     .logo-video {
         max-width: 100%;
-            
+
     }
 
     .btn-about-us {
@@ -424,7 +396,7 @@ a {
     .header {
         width: 100%;
         height: 100%;
-        
+
     }
 
     .video-block {
@@ -461,6 +433,7 @@ a {
         padding: 0;
         font-size: 1.3rem;
         letter-spacing: 0.2rem;
+        
 
 
     }
@@ -472,7 +445,7 @@ a {
     .header {
         width: 100%;
         height: 100%;
-        
+
     }
 
     .video-block {
@@ -483,9 +456,6 @@ a {
 
     .logo-video {
         max-width: 100%;
-        
-        
-        
     }
 
 
@@ -533,7 +503,6 @@ a {
 
     .logo-video {
         max-width: 100%;
-        transform: translateY(-70%);
 
     }
 
@@ -583,7 +552,7 @@ a {
     .logo-video {
         max-width: 100%;
         transform: translateY(-50%);
-        
+
     }
 
 
@@ -629,7 +598,7 @@ a {
 
     .logo-video {
         max-width: 100%;
-        
+
     }
 
 
@@ -659,10 +628,8 @@ a {
         padding: 0;
         font-size: 1rem;
         letter-spacing: 0.2rem;
-
     }
 }
-
 
 
 
